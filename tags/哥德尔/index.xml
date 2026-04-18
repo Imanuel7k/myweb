@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>哥德尔 on ℵ₁</title>
+    <link>https://example.org/tags/%E5%93%A5%E5%BE%B7%E5%B0%94/</link>
+    <description>Recent content in 哥德尔 on ℵ₁</description>
+    <generator>Hugo</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 17 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/tags/%E5%93%A5%E5%BE%B7%E5%B0%94/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>哥德尔不完备性定理</title>
+      <link>https://example.org/posts/godel-incompleteness/</link>
+      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://example.org/posts/godel-incompleteness/</guid>
+      <description>&lt;p&gt;哥德尔不完备性定理是数理逻辑中最深刻的成果之一。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第一不完备性定理&#34;&gt;第一不完备性定理&lt;/h2&gt;&#xA;&lt;p&gt;在任何包含基本算术的一致形式系统 $F$ 中，存在一个命题 $G$，使得：&lt;/p&gt;&#xA;&lt;p&gt;$$F \not\vdash G \quad \text{且} \quad F \not\vdash \neg G$$&lt;/p&gt;&#xA;&lt;p&gt;这意味着系统 $F$ 既不能证明 $G$，也不能证明 $\neg G$。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第二不完备性定理&#34;&gt;第二不完备性定理&lt;/h2&gt;&#xA;&lt;p&gt;如果形式系统 $F$ 是一致的，则 $F$ 不能证明自身的的一致性：&lt;/p&gt;&#xA;&lt;p&gt;$$F \not\vdash \text{Con}(F)$$&lt;/p&gt;&#xA;&lt;p&gt;其中 $\text{Con}(F)$ 表示 &amp;ldquo;$F$ 是一致的&amp;quot;这一命题。&lt;/p&gt;&#xA;&lt;h2 id=&#34;哥德尔编码&#34;&gt;哥德尔编码&lt;/h2&gt;&#xA;&lt;p&gt;哥德尔创造性地将形式系统中的符号、公式和证明序列映射为自然数。对于任意公式 $\varphi$，其哥德尔数记为 $\ulcorner \varphi \urcorner$。&lt;/p&gt;&#xA;&lt;p&gt;自指命题 $G$ 的构造：&lt;/p&gt;&#xA;&lt;p&gt;$$G \equiv \forall y , \neg \text{Prov}(y, \ulcorner G \urcorner)$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;深远影响&#34;&gt;深远影响&lt;/h2&gt;&#xA;&lt;p&gt;不完备性定理揭示了：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;数学真理与可证明性之间存在鸿沟&lt;/li&gt;&#xA;&lt;li&gt;形式系统的固有限制&lt;/li&gt;&#xA;&lt;li&gt;人类思维与机器的本质区别（彭罗斯论证）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这一定理动摇了希尔伯特纲领的基础，即数学可以被完全形式化和证明其一致性。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

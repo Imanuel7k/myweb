@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="一个极简的现代博客">
+<title>第一篇文章 · ℵ₁</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+SC:wght@400;500;600;700&family=STIX+Two+Math&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" onload="renderMathInElement(document.body, {
+  delimiters: [
+    {left: '$$', right: '$$', display: true},
+    {left: '$', right: '$', display: false},
+    {left: '\\[', right: '\\]', display: true},
+    {left: '\\(', right: '\\)', display: false}
+  ]
+});"></script>
+
+<style>
+ 
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+ 
+.theme-paper {
+  --bg-color: #f8f5f0;
+  --bg-secondary: #efe9e0;
+  --bg-card: #f5f2ec;
+  --text-color: #2c2c2c;
+  --text-secondary: #5a5a5a;
+  --text-muted: #8a8a8a;
+  --accent-color: #8b4513;
+  --accent-hover: #a0522d;
+  --border-color: #d4ccc0;
+  --shadow: rgba(0, 0, 0, 0.06);
+  --shadow-deep: rgba(0, 0, 0, 0.12);
+  --code-bg: #f0ebe4;
+}
+
+.theme-dark {
+  --bg-color: #1a1a1a;
+  --bg-secondary: #252525;
+  --bg-card: #222222;
+  --text-color: #e8e4df;
+  --text-secondary: #a8a8a8;
+  --text-muted: #6a6a6a;
+  --accent-color: #c9a66b;
+  --accent-hover: #d4b07a;
+  --border-color: #3a3a3a;
+  --shadow: rgba(0, 0, 0, 0.2);
+  --shadow-deep: rgba(0, 0, 0, 0.4);
+  --code-bg: #2a2a2a;
+}
+
+ 
+body {
+  font-family: 'EB Garamond', 'Noto Serif SC', Garamond, Georgia, serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.7;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ 
+.math-symbol, .site-title, .hero-title {
+  font-family: 'STIX Two Math', 'EB Garamond', serif;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+ 
+.theme-toggle {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 2px 6px var(--shadow);
+}
+
+.theme-toggle:hover {
+  transform: scale(1.08);
+  box-shadow: 0 3px 10px var(--shadow-deep);
+}
+
+.theme-paper .theme-toggle .icon-moon { display: none; }
+.theme-paper .theme-toggle .icon-sun { display: block; color: #8b4513; }
+.theme-dark .theme-toggle .icon-sun { display: none; }
+.theme-dark .theme-toggle .icon-moon { display: block; color: #c9a66b; }
+
+ 
+.site-header {
+  padding: 2rem 0 1.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.3rem;
+}
+
+.site-title a {
+  color: var(--text-color);
+}
+
+.site-subtitle {
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+.site-nav {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.site-nav a {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.site-nav a:hover,
+.site-nav a.active {
+  color: var(--accent-color);
+}
+
+.site-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--accent-color);
+  transition: width 0.25s ease;
+}
+
+.site-nav a:hover::after {
+  width: 100%;
+}
+
+ 
+.site-footer {
+  margin-top: 5rem;
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.02em;
+}
+
+.site-footer a {
+  color: var(--text-secondary);
+}
+
+ 
+.hero-full {
+  position: relative;
+  min-height: 70vh;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-full.has-background {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay {
+  width: 100%;
+  padding: 3rem 2rem 2rem;
+  background: linear-gradient(to top, rgba(248, 245, 240, 0.92) 0%, rgba(248, 245, 240, 0.7) 60%, transparent 100%);
+}
+
+.theme-dark .hero-overlay {
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.92) 0%, rgba(26, 26, 26, 0.7) 60%, transparent 100%);
+}
+
+.hero-poem {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.poem-line {
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+.poem-author {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 1.5rem;
+  font-style: italic;
+}
+
+ 
+.latest-section {
+  margin-bottom: 3rem;
+}
+
+.latest-section .section-header {
+  margin-bottom: 1.5rem;
+}
+
+.latest-card {
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border-radius: 2px;
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.latest-card:last-child {
+  margin-bottom: 0;
+}
+
+.latest-card:hover {
+  border-color: var(--accent-color);
+}
+
+.latest-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  line-height: 1.4;
+}
+
+.latest-title a {
+  color: var(--text-color);
+}
+
+.latest-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.latest-excerpt {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+ 
+.section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-color);
+  letter-spacing: 0.03em;
+}
+
+.section-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+ 
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.post-item {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.post-item:last-child {
+  border-bottom: none;
+}
+
+.post-item-title {
+  font-size: 1rem;
+  font-weight: 400;
+  flex: 1;
+}
+
+.post-item-title a {
+  color: var(--text-color);
+}
+
+.post-item-title a:hover {
+  color: var(--accent-color);
+}
+
+.post-item-meta {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+ 
+.list-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.list-title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.list-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+ 
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.category-btn {
+  padding: 0.4rem 0.9rem;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.category-btn:hover,
+.category-btn.active {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+  background: transparent;
+}
+
+ 
+.article-header {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.article-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.article-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.article-content {
+  font-size: 1rem;
+  line-height: 1.85;
+}
+
+.article-content h2,
+.article-content h3,
+.article-content h4 {
+  margin: 2.5rem 0 1rem;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.article-content h2 {
+  font-size: 1.35rem;
+}
+
+.article-content h3 {
+  font-size: 1.15rem;
+}
+
+.article-content p {
+  margin-bottom: 1.2rem;
+}
+
+.article-content code {
+  background: var(--code-bg);
+  padding: 0.15em 0.35em;
+  border-radius: 2px;
+  font-size: 0.88em;
+  font-family: 'SF Mono', 'Consolas', monospace;
+}
+
+.article-content pre {
+  background: var(--code-bg);
+  padding: 1rem 1.2rem;
+  border-radius: 2px;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  font-size: 0.9em;
+}
+
+.article-content pre code {
+  background: none;
+  padding: 0;
+}
+
+.article-content blockquote {
+  border-left: 2px solid var(--accent-color);
+  padding-left: 1.2rem;
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2px;
+  margin: 1.5rem 0;
+}
+
+.article-content ul,
+.article-content ol {
+  margin: 1rem 0 1.5rem 1.2rem;
+}
+
+.article-content li {
+  margin-bottom: 0.4rem;
+}
+
+.article-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.article-content th,
+.article-content td {
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--border-color);
+  font-size: 0.95em;
+}
+
+.article-content th {
+  background: var(--bg-secondary);
+  font-weight: 500;
+}
+
+ 
+.katex {
+  font-size: 1.05em;
+}
+.katex-display {
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+ 
+.about-content {
+  max-width: 650px;
+}
+
+ 
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-full {
+    min-height: 50vh;
+    margin-left: -1rem;
+    width: calc(100% + 2rem);
+  }
+
+  .hero-overlay {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  .poem-line {
+    font-size: 0.9rem;
+  }
+
+  .theme-toggle {
+    top: 1rem;
+    right: 1rem;
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .latest-card {
+    padding: 1.5rem;
+  }
+
+  .latest-title {
+    font-size: 1.2rem;
+  }
+
+  .article-title {
+    font-size: 1.5rem;
+  }
+
+  .post-item {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
+</style></head>
+<body class="theme-paper">
+  <div class="theme-toggle" onclick="toggleTheme()" title="切换主题">
+    <span class="icon-sun">☀</span>
+    <span class="icon-moon">☾</span>
+  </div>
+  <div class="container"><header class="site-header">
+  <h1 class="site-title"><a href="https://example.org/">ℵ₁</a></h1>
+  
+  <p class="site-subtitle">探索无限的可能</p>
+  
+  <nav class="site-nav">
+    
+    <a href="/" >首页</a>
+    
+    <a href="/posts/" >文章</a>
+    
+    <a href="/about/" >关于</a>
+    
+  </nav>
+</header><main class="main-content">
+<article>
+  <header class="article-header">
+    <h1 class="article-title">第一篇文章</h1>
+    <div class="article-meta">
+      <time datetime="2024-04-18">2024年04月18日</time>
+      
+      <span>随笔</span>
+      
+    </div>
+  </header>
+  <div class="article-content">
+    <p>欢迎来到我的博客！</p>
+<p>这是 <strong>ℵ₁</strong> 的第一篇文章。在这个数字空间里，我将记录思考、分享知识。</p>
+<h2 id="为什么写博客">为什么写博客</h2>
+<p>写作是最好的思考方式。通过记录和整理，我们能更好地理解世界。</p>
+<blockquote>
+<p>写作是一种思考的延伸。</p>
+</blockquote>
+<h2 id="接下来">接下来</h2>
+<p>这个网站将会有：</p>
+<ul>
+<li>技术文章</li>
+<li>生活随笔</li>
+<li>读书笔记</li>
+</ul>
+<p>期待与你分享更多。</p>
+
+  </div>
+</article>
+
+    </main><footer class="site-footer">
+  <p>© 2026 ℵ₁ · 由 <a href="https://gohugo.io" target="_blank">Hugo</a> 驱动</p>
+</footer></div>
+  <script>
+    
+    function toggleTheme() {
+      const body = document.body;
+      if (body.classList.contains('theme-paper')) {
+        body.classList.remove('theme-paper');
+        body.classList.add('theme-dark');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        body.classList.remove('theme-dark');
+        body.classList.add('theme-paper');
+        localStorage.setItem('theme', 'paper');
+      }
+    }
+
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      const savedTheme = localStorage.getItem('theme');
+      const body = document.body;
+      if (savedTheme === 'dark') {
+        body.classList.remove('theme-paper');
+        body.classList.add('theme-dark');
+      }
+    });
+  </script>
+</body>
+</html>
