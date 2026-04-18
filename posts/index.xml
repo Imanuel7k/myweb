@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on ℵ₁</title>
-    <link>https://example.org/posts/</link>
+    <link>https://imanuel7k.github.io/myweb/posts/</link>
     <description>Recent content in Posts on ℵ₁</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://imanuel7k.github.io/myweb/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>第一篇文章</title>
-      <link>https://example.org/posts/first-post/</link>
+      <link>https://imanuel7k.github.io/myweb/posts/first-post/</link>
       <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/first-post/</guid>
+      <guid>https://imanuel7k.github.io/myweb/posts/first-post/</guid>
       <description>&lt;p&gt;欢迎来到我的博客！&lt;/p&gt;&#xA;&lt;p&gt;这是 &lt;strong&gt;ℵ₁&lt;/strong&gt; 的第一篇文章。在这个数字空间里，我将记录思考、分享知识。&lt;/p&gt;&#xA;&lt;h2 id=&#34;为什么写博客&#34;&gt;为什么写博客&lt;/h2&gt;&#xA;&lt;p&gt;写作是最好的思考方式。通过记录和整理，我们能更好地理解世界。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;写作是一种思考的延伸。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;接下来&#34;&gt;接下来&lt;/h2&gt;&#xA;&lt;p&gt;这个网站将会有：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;技术文章&lt;/li&gt;&#xA;&lt;li&gt;生活随笔&lt;/li&gt;&#xA;&lt;li&gt;读书笔记&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;期待与你分享更多。&lt;/p&gt;</description>
     </item>
     <item>
       <title>Markdown语法示例</title>
-      <link>https://example.org/posts/markdown-example/</link>
+      <link>https://imanuel7k.github.io/myweb/posts/markdown-example/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/markdown-example/</guid>
+      <guid>https://imanuel7k.github.io/myweb/posts/markdown-example/</guid>
       <description>&lt;p&gt;这篇文章展示了Markdown的各种语法。&lt;/p&gt;&#xA;&lt;h2 id=&#34;文本格式&#34;&gt;文本格式&lt;/h2&gt;&#xA;&lt;p&gt;普通文本。&lt;strong&gt;粗体文本&lt;/strong&gt;。&lt;em&gt;斜体文本&lt;/em&gt;。&lt;code&gt;行内代码&lt;/code&gt;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;列表&#34;&gt;列表&lt;/h2&gt;&#xA;&lt;p&gt;无序列表：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;项目一&lt;/li&gt;&#xA;&lt;li&gt;项目二&lt;/li&gt;&#xA;&lt;li&gt;项目三&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;有序列表：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;第一步&lt;/li&gt;&#xA;&lt;li&gt;第二步&lt;/li&gt;&#xA;&lt;li&gt;第三步&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;代码块&#34;&gt;代码块&lt;/h2&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hello&lt;/span&gt;():&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    print(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Hello, World!&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;引用&#34;&gt;引用&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;这是一段引用文字。&#xA;可以跨越多行。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;链接和图片&#34;&gt;链接和图片&lt;/h2&gt;&#xA;&lt;p&gt;这是一个&lt;a href=&#34;https://example.org&#34;&gt;链接&lt;/a&gt;。&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;这就是Markdown的基本语法！&lt;/p&gt;</description>
     </item>
     <item>
       <title>哥德尔不完备性定理</title>
-      <link>https://example.org/posts/godel-incompleteness/</link>
+      <link>https://imanuel7k.github.io/myweb/posts/godel-incompleteness/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/godel-incompleteness/</guid>
+      <guid>https://imanuel7k.github.io/myweb/posts/godel-incompleteness/</guid>
       <description>&lt;p&gt;哥德尔不完备性定理是数理逻辑中最深刻的成果之一。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第一不完备性定理&#34;&gt;第一不完备性定理&lt;/h2&gt;&#xA;&lt;p&gt;在任何包含基本算术的一致形式系统 $F$ 中，存在一个命题 $G$，使得：&lt;/p&gt;&#xA;&lt;p&gt;$$F \not\vdash G \quad \text{且} \quad F \not\vdash \neg G$$&lt;/p&gt;&#xA;&lt;p&gt;这意味着系统 $F$ 既不能证明 $G$，也不能证明 $\neg G$。&lt;/p&gt;&#xA;&lt;h2 id=&#34;第二不完备性定理&#34;&gt;第二不完备性定理&lt;/h2&gt;&#xA;&lt;p&gt;如果形式系统 $F$ 是一致的，则 $F$ 不能证明自身的的一致性：&lt;/p&gt;&#xA;&lt;p&gt;$$F \not\vdash \text{Con}(F)$$&lt;/p&gt;&#xA;&lt;p&gt;其中 $\text{Con}(F)$ 表示 &amp;ldquo;$F$ 是一致的&amp;quot;这一命题。&lt;/p&gt;&#xA;&lt;h2 id=&#34;哥德尔编码&#34;&gt;哥德尔编码&lt;/h2&gt;&#xA;&lt;p&gt;哥德尔创造性地将形式系统中的符号、公式和证明序列映射为自然数。对于任意公式 $\varphi$，其哥德尔数记为 $\ulcorner \varphi \urcorner$。&lt;/p&gt;&#xA;&lt;p&gt;自指命题 $G$ 的构造：&lt;/p&gt;&#xA;&lt;p&gt;$$G \equiv \forall y , \neg \text{Prov}(y, \ulcorner G \urcorner)$$&lt;/p&gt;&#xA;&lt;h2 id=&#34;深远影响&#34;&gt;深远影响&lt;/h2&gt;&#xA;&lt;p&gt;不完备性定理揭示了：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;数学真理与可证明性之间存在鸿沟&lt;/li&gt;&#xA;&lt;li&gt;形式系统的固有限制&lt;/li&gt;&#xA;&lt;li&gt;人类思维与机器的本质区别（彭罗斯论证）&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这一定理动摇了希尔伯特纲领的基础，即数学可以被完全形式化和证明其一致性。&lt;/p&gt;</description>
     </item>
     <item>
       <title>康德与形而上学的可能性</title>
-      <link>https://example.org/posts/kant-metaphysics/</link>
+      <link>https://imanuel7k.github.io/myweb/posts/kant-metaphysics/</link>
       <pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/kant-metaphysics/</guid>
+      <guid>https://imanuel7k.github.io/myweb/posts/kant-metaphysics/</guid>
       <description>&lt;p&gt;康德的批判哲学试图回答一个根本问题：&lt;strong&gt;形而上学作为科学是否可能？&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;先验哲学的转向&#34;&gt;先验哲学的转向&lt;/h2&gt;&#xA;&lt;p&gt;康德之前，形而上学陷入困境。理性主义与经验主义的争论似乎无解。康德提出&amp;quot;先验哲学&amp;quot;，追问知识何以可能。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;到目前为止，形而上学是一个完全不成科学的战场。&amp;quot;——康德&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;先验感性论&#34;&gt;先验感性论&lt;/h2&gt;&#xA;&lt;p&gt;康德论证空间与时间是人类感性直观的先天形式：&lt;/p&gt;&#xA;&lt;p&gt;$$\text{空间} = \text{外感官的先天形式}$$&#xA;$$\text{时间} = \text{内感官的先天形式}$$&lt;/p&gt;&#xA;&lt;p&gt;这意味着我们无法认识&amp;quot;物自身&amp;rdquo;（Ding an sich），只能认识&amp;quot;现象&amp;quot;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;先验分析论&#34;&gt;先验分析论&lt;/h2&gt;&#xA;&lt;p&gt;康德提出十二范畴，作为知性思维的先天概念：&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;类别&lt;/th&gt;&#xA;          &lt;th&gt;范例&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;量&lt;/td&gt;&#xA;          &lt;td&gt;单一性、多数性、全体性&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;质&lt;/td&gt;&#xA;          &lt;td&gt;实在性、否定性、限制性&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;关系&lt;/td&gt;&#xA;          &lt;td&gt;实体、因果、交互&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;样态&lt;/td&gt;&#xA;          &lt;td&gt;可能、存在、必然&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;因果律是最关键的范畴。康德著名的论证：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;一切变化都必然依照因果联结的规律发生。&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;形而上学的不可能性&#34;&gt;形而上学的不可能性&lt;/h2&gt;&#xA;&lt;p&gt;康德揭示理性辩证论：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;灵魂&lt;/strong&gt;：理性心理学陷入谬误推理&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;世界&lt;/strong&gt;：宇宙论产生二律背反&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;上帝&lt;/strong&gt;：神学证明皆不成立&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;二律背反示例：&lt;/p&gt;&#xA;&lt;p&gt;$$\text{正题：世界有时间开端和空间界限}$$&#xA;$$\text{反题：世界无时间开端亦无空间界限}$$&lt;/p&gt;&#xA;&lt;p&gt;两者皆可被理性同等有力地证明——这说明形而上学超出了人类认识能力的界限。&lt;/p&gt;</description>
     </item>
     <item>
       <title>博尔赫斯与无限图书馆</title>
-      <link>https://example.org/posts/borges-library/</link>
+      <link>https://imanuel7k.github.io/myweb/posts/borges-library/</link>
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/borges-library/</guid>
+      <guid>https://imanuel7k.github.io/myweb/posts/borges-library/</guid>
       <description>&lt;p&gt;博尔赫斯的《巴别塔图书馆》（&lt;em&gt;La biblioteca de Babel&lt;/em&gt;）是二十世纪最伟大的短篇小说之一。&lt;/p&gt;&#xA;&lt;h2 id=&#34;无限的空间&#34;&gt;无限的空间&lt;/h2&gt;&#xA;&lt;p&gt;图书馆的结构：&lt;/p&gt;&#xA;&lt;p&gt;$$\text{图书馆} = \text{无限数量的六边形回廊}$$&lt;/p&gt;&#xA;&lt;p&gt;每个六边形有四面书架，每面书架有五层，每层三十二本书。每本书四百一十页，每页四十行，每行八十个字符。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;图书馆是无限的、周而复始的。如果一个永恒的旅人从任何方向穿越它，几个世纪后他会发现同样的书卷以同样的紊乱重复出现。&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;符号宇宙&#34;&gt;符号宇宙&lt;/h2&gt;&#xA;&lt;p&gt;图书馆中所有书的字符组合：&lt;/p&gt;&#xA;&lt;p&gt;$$N = 25^{410 \times 40 \times 80}$$&lt;/p&gt;&#xA;&lt;p&gt;这是一个天文数字，包含了所有可能的文本——所有真理与谬误，所有历史与预言。&lt;/p&gt;&#xA;&lt;h2 id=&#34;元小说的先驱&#34;&gt;元小说的先驱&lt;/h2&gt;&#xA;&lt;p&gt;博尔赫斯在这篇1941年的故事中，预示了：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;虚构与真实的界限消解&lt;/li&gt;&#xA;&lt;li&gt;文本自身的自我指涉&lt;/li&gt;&#xA;&lt;li&gt;作者的缺席&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;无限与有限&#34;&gt;无限与有限&lt;/h2&gt;&#xA;&lt;p&gt;图书馆的悖论：&lt;/p&gt;&#xA;&lt;p&gt;它包含一切文本，却几乎全是无意义的乱码。那些包含真理的书，淹没在噪音的海洋中。&lt;/p&gt;&#xA;&lt;p&gt;这映射了数学中可判定性的困境——真理是无限的，但我们能触及的却是有限的。&lt;/p&gt;&#xA;&lt;h2 id=&#34;寻找目录&#34;&gt;寻找目录&lt;/h2&gt;&#xA;&lt;p&gt;图书馆员终生寻找那本&amp;quot;目录&amp;quot;——能指引人在迷宫中找到意义的书。但也许：&lt;/p&gt;&#xA;&lt;p&gt;$$\text{目录} \in \text{图书馆}$$&lt;/p&gt;&#xA;&lt;p&gt;目录本身也在图书馆中，需要另一本目录来找到它……无限退行。&lt;/p&gt;&#xA;&lt;p&gt;博尔赫斯以文学的方式，触及了哥德尔自指与递归的核心问题。&lt;/p&gt;</description>
     </item>
   </channel>

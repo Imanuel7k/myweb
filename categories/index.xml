@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on ℵ₁</title>
-    <link>https://example.org/categories/</link>
+    <link>https://imanuel7k.github.io/myweb/categories/</link>
     <description>Recent content in Categories on ℵ₁</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 18 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://imanuel7k.github.io/myweb/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>随笔</title>
-      <link>https://example.org/categories/%E9%9A%8F%E7%AC%94/</link>
+      <link>https://imanuel7k.github.io/myweb/categories/%E9%9A%8F%E7%AC%94/</link>
       <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/categories/%E9%9A%8F%E7%AC%94/</guid>
+      <guid>https://imanuel7k.github.io/myweb/categories/%E9%9A%8F%E7%AC%94/</guid>
       <description></description>
     </item>
     <item>
       <title>技术</title>
-      <link>https://example.org/categories/%E6%8A%80%E6%9C%AF/</link>
+      <link>https://imanuel7k.github.io/myweb/categories/%E6%8A%80%E6%9C%AF/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <guid>https://imanuel7k.github.io/myweb/categories/%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
     <item>
       <title>逻辑</title>
-      <link>https://example.org/categories/%E9%80%BB%E8%BE%91/</link>
+      <link>https://imanuel7k.github.io/myweb/categories/%E9%80%BB%E8%BE%91/</link>
       <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/categories/%E9%80%BB%E8%BE%91/</guid>
+      <guid>https://imanuel7k.github.io/myweb/categories/%E9%80%BB%E8%BE%91/</guid>
       <description></description>
     </item>
     <item>
       <title>哲学</title>
-      <link>https://example.org/categories/%E5%93%B2%E5%AD%A6/</link>
+      <link>https://imanuel7k.github.io/myweb/categories/%E5%93%B2%E5%AD%A6/</link>
       <pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/categories/%E5%93%B2%E5%AD%A6/</guid>
+      <guid>https://imanuel7k.github.io/myweb/categories/%E5%93%B2%E5%AD%A6/</guid>
       <description></description>
     </item>
     <item>
       <title>文学</title>
-      <link>https://example.org/categories/%E6%96%87%E5%AD%A6/</link>
+      <link>https://imanuel7k.github.io/myweb/categories/%E6%96%87%E5%AD%A6/</link>
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/categories/%E6%96%87%E5%AD%A6/</guid>
+      <guid>https://imanuel7k.github.io/myweb/categories/%E6%96%87%E5%AD%A6/</guid>
       <description></description>
     </item>
   </channel>

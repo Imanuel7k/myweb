@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>元小说 on ℵ₁</title>
-    <link>https://example.org/tags/%E5%85%83%E5%B0%8F%E8%AF%B4/</link>
+    <link>https://imanuel7k.github.io/myweb/tags/%E5%85%83%E5%B0%8F%E8%AF%B4/</link>
     <description>Recent content in 元小说 on ℵ₁</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Mon, 15 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://example.org/tags/%E5%85%83%E5%B0%8F%E8%AF%B4/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://imanuel7k.github.io/myweb/tags/%E5%85%83%E5%B0%8F%E8%AF%B4/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>博尔赫斯与无限图书馆</title>
-      <link>https://example.org/posts/borges-library/</link>
+      <link>https://imanuel7k.github.io/myweb/posts/borges-library/</link>
       <pubDate>Mon, 15 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://example.org/posts/borges-library/</guid>
+      <guid>https://imanuel7k.github.io/myweb/posts/borges-library/</guid>
       <description>&lt;p&gt;博尔赫斯的《巴别塔图书馆》（&lt;em&gt;La biblioteca de Babel&lt;/em&gt;）是二十世纪最伟大的短篇小说之一。&lt;/p&gt;&#xA;&lt;h2 id=&#34;无限的空间&#34;&gt;无限的空间&lt;/h2&gt;&#xA;&lt;p&gt;图书馆的结构：&lt;/p&gt;&#xA;&lt;p&gt;$$\text{图书馆} = \text{无限数量的六边形回廊}$$&lt;/p&gt;&#xA;&lt;p&gt;每个六边形有四面书架，每面书架有五层，每层三十二本书。每本书四百一十页，每页四十行，每行八十个字符。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;图书馆是无限的、周而复始的。如果一个永恒的旅人从任何方向穿越它，几个世纪后他会发现同样的书卷以同样的紊乱重复出现。&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;符号宇宙&#34;&gt;符号宇宙&lt;/h2&gt;&#xA;&lt;p&gt;图书馆中所有书的字符组合：&lt;/p&gt;&#xA;&lt;p&gt;$$N = 25^{410 \times 40 \times 80}$$&lt;/p&gt;&#xA;&lt;p&gt;这是一个天文数字，包含了所有可能的文本——所有真理与谬误，所有历史与预言。&lt;/p&gt;&#xA;&lt;h2 id=&#34;元小说的先驱&#34;&gt;元小说的先驱&lt;/h2&gt;&#xA;&lt;p&gt;博尔赫斯在这篇1941年的故事中，预示了：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;虚构与真实的界限消解&lt;/li&gt;&#xA;&lt;li&gt;文本自身的自我指涉&lt;/li&gt;&#xA;&lt;li&gt;作者的缺席&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;无限与有限&#34;&gt;无限与有限&lt;/h2&gt;&#xA;&lt;p&gt;图书馆的悖论：&lt;/p&gt;&#xA;&lt;p&gt;它包含一切文本，却几乎全是无意义的乱码。那些包含真理的书，淹没在噪音的海洋中。&lt;/p&gt;&#xA;&lt;p&gt;这映射了数学中可判定性的困境——真理是无限的，但我们能触及的却是有限的。&lt;/p&gt;&#xA;&lt;h2 id=&#34;寻找目录&#34;&gt;寻找目录&lt;/h2&gt;&#xA;&lt;p&gt;图书馆员终生寻找那本&amp;quot;目录&amp;quot;——能指引人在迷宫中找到意义的书。但也许：&lt;/p&gt;&#xA;&lt;p&gt;$$\text{目录} \in \text{图书馆}$$&lt;/p&gt;&#xA;&lt;p&gt;目录本身也在图书馆中，需要另一本目录来找到它……无限退行。&lt;/p&gt;&#xA;&lt;p&gt;博尔赫斯以文学的方式，触及了哥德尔自指与递归的核心问题。&lt;/p&gt;</description>
     </item>
   </channel>
