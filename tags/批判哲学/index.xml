@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>批判哲学 on ℵ₁</title>
-    <link>http://localhost:55966/myweb/tags/%E6%89%B9%E5%88%A4%E5%93%B2%E5%AD%A6/</link>
+    <link>https://imanuel7k.github.io/myweb/tags/%E6%89%B9%E5%88%A4%E5%93%B2%E5%AD%A6/</link>
     <description>Recent content in 批判哲学 on ℵ₁</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
     <lastBuildDate>Tue, 16 Apr 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:55966/myweb/tags/%E6%89%B9%E5%88%A4%E5%93%B2%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://imanuel7k.github.io/myweb/tags/%E6%89%B9%E5%88%A4%E5%93%B2%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>康德与形而上学的可能性</title>
-      <link>http://localhost:55966/myweb/posts/kant-metaphysics/</link>
+      <link>https://imanuel7k.github.io/myweb/posts/kant-metaphysics/</link>
       <pubDate>Tue, 16 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:55966/myweb/posts/kant-metaphysics/</guid>
+      <guid>https://imanuel7k.github.io/myweb/posts/kant-metaphysics/</guid>
       <description>&lt;p&gt;康德的批判哲学试图回答一个根本问题：&lt;strong&gt;形而上学作为科学是否可能？&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;先验哲学的转向&#34;&gt;先验哲学的转向&lt;/h2&gt;&#xA;&lt;p&gt;康德之前，形而上学陷入困境。理性主义与经验主义的争论似乎无解。康德提出&amp;quot;先验哲学&amp;quot;，追问知识何以可能。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;到目前为止，形而上学是一个完全不成科学的战场。&amp;quot;——康德&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;先验感性论&#34;&gt;先验感性论&lt;/h2&gt;&#xA;&lt;p&gt;康德论证空间与时间是人类感性直观的先天形式：&lt;/p&gt;&#xA;&lt;p&gt;$$\text{空间} = \text{外感官的先天形式}$$&#xA;$$\text{时间} = \text{内感官的先天形式}$$&lt;/p&gt;&#xA;&lt;p&gt;这意味着我们无法认识&amp;quot;物自身&amp;rdquo;（Ding an sich），只能认识&amp;quot;现象&amp;quot;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;先验分析论&#34;&gt;先验分析论&lt;/h2&gt;&#xA;&lt;p&gt;康德提出十二范畴，作为知性思维的先天概念：&lt;/p&gt;&#xA;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;类别&lt;/th&gt;&#xA;          &lt;th&gt;范例&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;量&lt;/td&gt;&#xA;          &lt;td&gt;单一性、多数性、全体性&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;质&lt;/td&gt;&#xA;          &lt;td&gt;实在性、否定性、限制性&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;关系&lt;/td&gt;&#xA;          &lt;td&gt;实体、因果、交互&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;样态&lt;/td&gt;&#xA;          &lt;td&gt;可能、存在、必然&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;因果律是最关键的范畴。康德著名的论证：&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;一切变化都必然依照因果联结的规律发生。&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;形而上学的不可能性&#34;&gt;形而上学的不可能性&lt;/h2&gt;&#xA;&lt;p&gt;康德揭示理性辩证论：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;灵魂&lt;/strong&gt;：理性心理学陷入谬误推理&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;世界&lt;/strong&gt;：宇宙论产生二律背反&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;上帝&lt;/strong&gt;：神学证明皆不成立&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;二律背反示例：&lt;/p&gt;&#xA;&lt;p&gt;$$\text{正题：世界有时间开端和空间界限}$$&#xA;$$\text{反题：世界无时间开端亦无空间界限}$$&lt;/p&gt;&#xA;&lt;p&gt;两者皆可被理性同等有力地证明——这说明形而上学超出了人类认识能力的界限。&lt;/p&gt;</description>
     </item>
   </channel>
