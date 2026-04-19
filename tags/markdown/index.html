@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<head><meta charset="utf-8">
+<head><script src="/myweb/livereload.js?mindelay=10&amp;v=2&amp;port=55966&amp;path=myweb/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="一个极简的现代博客">
+<link rel="icon" type="image/png" href="/myweb/icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/myweb/icon.png">
 <title>Markdown · ℵ₁</title>
 
 
@@ -95,6 +97,7 @@ a:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
+  overflow: visible;
 }
 
  
@@ -414,6 +417,23 @@ a:hover {
   border-bottom: 1px solid var(--border-color);
 }
 
+.article-body {
+  display: flex;
+  gap: 2rem;
+}
+
+.article-content {
+  flex: 1;
+  min-width: 0;
+  max-width: 700px;
+}
+
+.article-toc {
+  width: 200px;
+  flex-shrink: 0;
+  margin-right: -220px;
+}
+
 .article-title {
   font-size: 1.8rem;
   font-weight: 500;
@@ -482,7 +502,12 @@ a:hover {
   padding-left: 1.2rem;
   margin: 1.5rem 0;
   color: var(--text-secondary);
-  font-style: italic;
+}
+
+.article-content hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2.5rem 0;
 }
 
 .article-content img {
@@ -535,6 +560,80 @@ a:hover {
 }
 
  
+.article-toc {
+  position: relative;
+}
+
+.toc-sticky {
+  position: sticky;
+  top: 2rem;
+  padding: 1rem 0;
+}
+
+.toc-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+ 
+.toc-sticky ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-sticky li {
+  margin: 0;
+  padding: 0.3rem 0;
+}
+
+.toc-sticky > ul > li > a {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  display: block;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+.toc-sticky > ul > li > a:hover {
+  color: var(--accent-color);
+}
+
+ 
+.toc-sticky ul ul {
+  padding-left: 0.8rem;
+  margin: 0.2rem 0;
+}
+
+.toc-sticky ul ul li a {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.toc-sticky ul ul li a:hover {
+  color: var(--accent-color);
+}
+
+ 
+.toc-sticky a.active {
+  color: var(--accent-color) !important;
+}
+
+ 
+@media (max-width: 900px) {
+  .article-body {
+    flex-direction: column;
+  }
+
+  .article-toc {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 1.5rem 1rem;
@@ -591,9 +690,9 @@ a:hover {
     <span class="icon-moon">☾</span>
   </div>
   <div class="container"><header class="site-header">
-  <h1 class="site-title"><a href="https://imanuel7k.github.io/myweb/">ℵ₁</a></h1>
+  <h1 class="site-title"><a href="http://localhost:55966/myweb/">ℵ₁</a></h1>
   
-  <p class="site-subtitle">探索无限的可能</p>
+  <p class="site-subtitle">井的个人博客</p>
   
   <nav class="site-nav">
     
@@ -614,6 +713,11 @@ a:hover {
 </div>
 
 <div class="posts-list">
+  
+  <div class="post-item">
+    <span class="post-item-title"><a href="/myweb/posts/pastwritings/">过往的一些摘要</a></span>
+    <span class="post-item-meta">2026-04-19</span>
+  </div>
   
   <div class="post-item">
     <span class="post-item-title"><a href="/myweb/posts/markdown-example/">Markdown语法示例</a></span>

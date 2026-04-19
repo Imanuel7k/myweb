@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<head><meta charset="utf-8">
+<head><script src="/myweb/livereload.js?mindelay=10&amp;v=2&amp;port=55966&amp;path=myweb/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="一个极简的现代博客">
+<link rel="icon" type="image/png" href="/myweb/icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/myweb/icon.png">
 <title>关于 · ℵ₁</title>
 
 
@@ -95,6 +97,7 @@ a:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
+  overflow: visible;
 }
 
  
@@ -414,6 +417,23 @@ a:hover {
   border-bottom: 1px solid var(--border-color);
 }
 
+.article-body {
+  display: flex;
+  gap: 2rem;
+}
+
+.article-content {
+  flex: 1;
+  min-width: 0;
+  max-width: 700px;
+}
+
+.article-toc {
+  width: 200px;
+  flex-shrink: 0;
+  margin-right: -220px;
+}
+
 .article-title {
   font-size: 1.8rem;
   font-weight: 500;
@@ -482,7 +502,12 @@ a:hover {
   padding-left: 1.2rem;
   margin: 1.5rem 0;
   color: var(--text-secondary);
-  font-style: italic;
+}
+
+.article-content hr {
+  border: none;
+  border-top: 1px solid var(--border-color);
+  margin: 2.5rem 0;
 }
 
 .article-content img {
@@ -535,6 +560,80 @@ a:hover {
 }
 
  
+.article-toc {
+  position: relative;
+}
+
+.toc-sticky {
+  position: sticky;
+  top: 2rem;
+  padding: 1rem 0;
+}
+
+.toc-title {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+ 
+.toc-sticky ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.toc-sticky li {
+  margin: 0;
+  padding: 0.3rem 0;
+}
+
+.toc-sticky > ul > li > a {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  display: block;
+  padding: 0.25rem 0;
+  transition: color 0.2s ease;
+}
+
+.toc-sticky > ul > li > a:hover {
+  color: var(--accent-color);
+}
+
+ 
+.toc-sticky ul ul {
+  padding-left: 0.8rem;
+  margin: 0.2rem 0;
+}
+
+.toc-sticky ul ul li a {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.toc-sticky ul ul li a:hover {
+  color: var(--accent-color);
+}
+
+ 
+.toc-sticky a.active {
+  color: var(--accent-color) !important;
+}
+
+ 
+@media (max-width: 900px) {
+  .article-body {
+    flex-direction: column;
+  }
+
+  .article-toc {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 1.5rem 1rem;
@@ -591,9 +690,9 @@ a:hover {
     <span class="icon-moon">☾</span>
   </div>
   <div class="container"><header class="site-header">
-  <h1 class="site-title"><a href="https://imanuel7k.github.io/myweb/">ℵ₁</a></h1>
+  <h1 class="site-title"><a href="http://localhost:55966/myweb/">ℵ₁</a></h1>
   
-  <p class="site-subtitle">探索无限的可能</p>
+  <p class="site-subtitle">井的个人博客</p>
   
   <nav class="site-nav">
     
@@ -609,14 +708,19 @@ a:hover {
   <header class="article-header">
     <h1 class="article-title">关于</h1>
     <div class="article-meta">
-      <time datetime="2024-04-01">2024年04月01日</time>
+      <time datetime="2026-04-19">2026年04月19日</time>
       
     </div>
   </header>
-  <div class="article-content">
-    <p>欢迎来到 ℵ₁，一个极简的现代博客空间。</p>
+  <div class="article-body">
+    <div class="article-content">
+      <p>欢迎来到 ℵ₁，一个现代博客空间。</p>
 <h2 id="关于我">关于我</h2>
 <p>这是一个记录思考、分享知识的地方。</p>
+<h2 id="关于ℵ这个名称">关于ℵ₁这个名称</h2>
+<p>“Aleph”（ℵ）是希伯来文的第一个字母。在数学的集合论中，它被用来标记不同“大小”的无限（是的，无穷之间亦有不同）。</p>
+<p>最小的无限 ℵ₀（阿列夫零），就是自然数$\mathbb{N}$的<em>可数无穷</em>，我们可以一个一个列举下去。而 ℵ₁ 是比它更大的第一个无限，它对应的是“实数$\mathbb{R}$”或“线段上所有点”的无限，稠密，无法按顺序逐一列举，是无限之外。</p>
+<p>本站以此定名，是希望作为有限者的我们对于无穷、超限、绝对者这些宏大的概念多一些思考和关心。宏大的概念当然不会比我们日常琐碎现实的生活更重要，但是在对这些事物的思考中我们才庶几可以超越自身，获得一些更持久的安宁——或者更进一步，找到人生意义之安放。</p>
 <h2 id="关于本站">关于本站</h2>
 <p>本站使用 <a href="https://gohugo.io">Hugo</a> 构建，采用极简设计风格：</p>
 <ul>
@@ -627,6 +731,19 @@ a:hover {
 </ul>
 <p>感谢你的访问。</p>
 
+    </div>
+    <aside class="article-toc">
+      <div class="toc-sticky">
+        <h4 class="toc-title">目录</h4>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#关于我">关于我</a></li>
+    <li><a href="#关于ℵ这个名称">关于ℵ₁这个名称</a></li>
+    <li><a href="#关于本站">关于本站</a></li>
+  </ul>
+</nav>
+      </div>
+    </aside>
   </div>
 </article>
 
