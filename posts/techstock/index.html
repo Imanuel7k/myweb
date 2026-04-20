@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
-<head><meta charset="utf-8">
+<head><script src="/myweb/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=myweb/livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="一个极简的现代博客">
 <link rel="icon" type="image/png" href="/myweb/icon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/myweb/icon.png">
-<title>Tags · ℵ₁</title>
+<title>人文学科的技术栈 · ℵ₁</title>
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -690,7 +690,7 @@ a:hover {
     <span class="icon-moon">☾</span>
   </div>
   <div class="container"><header class="site-header">
-  <h1 class="site-title"><a href="https://imanuel7k.github.io/myweb/">ℵ₁</a></h1>
+  <h1 class="site-title"><a href="http://localhost:1313/myweb/">ℵ₁</a></h1>
   
   <p class="site-subtitle">井的个人博客</p>
   
@@ -704,38 +704,45 @@ a:hover {
     
   </nav>
 </header><main class="main-content">
+<article>
+  <header class="article-header">
+    <h1 class="article-title">人文学科的技术栈</h1>
+    <div class="article-meta">
+      <time datetime="2026-04-20">2026年04月20日</time>
+      
+      <span>技术</span>
+      
+    </div>
+  </header>
+  <div class="article-body">
+    <div class="article-content">
+      <p>根据我的交往人群，读者诸君肯定有不少从事于人文学科或者广义的人文社科。在这样一个AI时代，一些只用多折腾一点点的信息技术或可以为大家提升不少的效率。我把我的全程经验写下来，也许能有一些帮助。</p>
+<hr>
+<h2 id="文章写作latex">文章写作：$\LaTeX$</h2>
+<p>$\LaTeX$是一种排版方式，优势在于对于数学公式的支持，在理科学生学者那里广泛使用，我由于数理逻辑课作业的需求接触到了它。看起来和人文没有什么相干对不对？但是这种通过命令行来排版的语言在AI时代就具有了极高的优势。如果是Word写稿的工具流，我们只能把LLM（大语言模型）生成的文本复制粘贴到Word软件中再手动调整格式设置，更别提频繁出现又难以解决的排版问题。</p>
+<p>但是，$\LaTeX$语言的所有格式安排都在源代码中通过文本得到了表达，也就是说，如果配置好了$\LaTeX$编译环境，AI可以全程操盘你的文章内容和排版，并且极易生成出美观学术的排版效果，这是我向人文相关学生推荐此的原因。（不过对有些社科和工科来说，对于多图表的文章写作不如Word方便，可以不用考虑）</p>
+<p>此外，另一个主要的好处是，作为最主要的文献管理系统之一的Bibtex是基于$\LaTeX$的，无需另外的软件或配置就可以高效地进行文献管理、插入参考文献、交叉引用等功能，目录、页眉页脚、列表、小标题等格式设置也极其简便。</p>
+<p>$\LaTeX$和 ds</p>
+<p>关于$\LaTeX$环境的部署，我不在这里赘述，参看
+<a href="https://rosetears.cn/archives/73/"><u>这篇博文</u></a>
+即可，十分详细。</p>
+<p>关于$\LaTeX$语言的学习，可以参看
+<a href="/downloads/lshort-zh-cn.pdf" download>一份（不太）简短的$\LaTeX$介绍</a>，
+比较全面，并且不必追求像学习自然语言那样，只要学会基本的语法，具体操作时遇到问题再随时参阅即可，毕竟主要任务可以交给AI。</p>
 
-
-
-<div class="list-header">
-  <h1 class="list-title">Tags</h1>
-  
-</div>
-
-<div class="posts-list">
-  
-  <div class="post-item">
-    <span class="post-item-title"><a href="/myweb/tags/markdown/">Markdown</a></span>
-    <span class="post-item-meta">2026-04-20</span>
+    </div>
+    <aside class="article-toc">
+      <div class="toc-sticky">
+        <h4 class="toc-title">目录</h4>
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#文章写作latex">文章写作：$\LaTeX$</a></li>
+  </ul>
+</nav>
+      </div>
+    </aside>
   </div>
-  
-  <div class="post-item">
-    <span class="post-item-title"><a href="/myweb/tags/%E6%95%99%E7%A8%8B/">教程</a></span>
-    <span class="post-item-meta">2026-04-20</span>
-  </div>
-  
-  <div class="post-item">
-    <span class="post-item-title"><a href="/myweb/tags/%E5%8D%9A%E5%AE%A2/">博客</a></span>
-    <span class="post-item-meta">2026-04-19</span>
-  </div>
-  
-  <div class="post-item">
-    <span class="post-item-title"><a href="/myweb/tags/%E5%BC%80%E5%A7%8B/">开始</a></span>
-    <span class="post-item-meta">2026-04-19</span>
-  </div>
-  
-</div>
-
+</article>
 
     </main><footer class="site-footer">
   <p>© 2026 ℵ₁ · 由 <a href="https://gohugo.io" target="_blank">Hugo</a> 驱动</p>

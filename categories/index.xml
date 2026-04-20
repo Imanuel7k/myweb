@@ -6,8 +6,15 @@
     <description>Recent content in Categories on ℵ₁</description>
     <generator>Hugo</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 19 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://imanuel7k.github.io/myweb/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>技术</title>
+      <link>https://imanuel7k.github.io/myweb/categories/%E6%8A%80%E6%9C%AF/</link>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://imanuel7k.github.io/myweb/categories/%E6%8A%80%E6%9C%AF/</guid>
+      <description></description>
+    </item>
     <item>
       <title>哲学</title>
       <link>https://imanuel7k.github.io/myweb/categories/%E5%93%B2%E5%AD%A6/</link>
@@ -27,13 +34,6 @@
       <link>https://imanuel7k.github.io/myweb/categories/%E9%9A%8F%E7%AC%94/</link>
       <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
       <guid>https://imanuel7k.github.io/myweb/categories/%E9%9A%8F%E7%AC%94/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>技术</title>
-      <link>https://imanuel7k.github.io/myweb/categories/%E6%8A%80%E6%9C%AF/</link>
-      <pubDate>Wed, 17 Apr 2024 00:00:00 +0000</pubDate>
-      <guid>https://imanuel7k.github.io/myweb/categories/%E6%8A%80%E6%9C%AF/</guid>
       <description></description>
     </item>
   </channel>
