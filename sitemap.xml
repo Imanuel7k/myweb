@@ -2,58 +2,61 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://imanuel7k.github.io/myweb/categories/</loc>
+    <loc>https://aleph1.top/categories/</loc>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aleph1.top/posts/</loc>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aleph1.top/tags/</loc>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aleph1.top/</loc>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aleph1.top/posts/phlio1/</loc>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aleph1.top/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aleph1.top/categories/%E5%93%B2%E5%AD%A6/</loc>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aleph1.top/tags/%E5%BC%80%E5%A7%8B/</loc>
+    <lastmod>2026-04-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://aleph1.top/tags/markdown/</loc>
     <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/tags/markdown/</loc>
+    <loc>https://aleph1.top/posts/techstack/</loc>
     <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/posts/</loc>
+    <loc>https://aleph1.top/categories/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/tags/</loc>
+    <loc>https://aleph1.top/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2026-04-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/</loc>
-    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://imanuel7k.github.io/myweb/posts/techstack/</loc>
-    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://imanuel7k.github.io/myweb/categories/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://imanuel7k.github.io/myweb/tags/%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2026-04-20T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://imanuel7k.github.io/myweb/about/</loc>
+    <loc>https://aleph1.top/about/</loc>
     <lastmod>2026-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://aleph1.top/posts/sentences/</loc>
     <lastmod>2026-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/categories/%E5%93%B2%E5%AD%A6/</loc>
+    <loc>https://aleph1.top/posts/pastwritings/</loc>
     <lastmod>2026-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/tags/%E5%BC%80%E5%A7%8B/</loc>
+    <loc>https://aleph1.top/categories/%E9%80%BB%E8%BE%91/</loc>
     <lastmod>2026-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/posts/sentences/</loc>
+    <loc>https://aleph1.top/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2026-04-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/posts/pastwritings/</loc>
-    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://imanuel7k.github.io/myweb/categories/%E9%80%BB%E8%BE%91/</loc>
-    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://imanuel7k.github.io/myweb/categories/%E9%9A%8F%E7%AC%94/</loc>
-    <lastmod>2026-04-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://imanuel7k.github.io/myweb/posts/first-post/</loc>
+    <loc>https://aleph1.top/posts/first-post/</loc>
     <lastmod>2026-04-18T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://imanuel7k.github.io/myweb/posts/markdown-example/</loc>
+    <loc>https://aleph1.top/posts/markdown-example/</loc>
     <lastmod>2024-04-17T00:00:00+00:00</lastmod>
   </url>
 </urlset>
