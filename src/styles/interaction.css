@@ -1,0 +1,78 @@
+/* Quiet surfaces and a shared motion rhythm, without changing the reading layout. */
+:root {
+  --motion-fast: 180ms;
+  --motion-medium: 320ms;
+  --motion-slow: 600ms;
+  --surface-tint: color-mix(in srgb, var(--paper-raised) 65%, var(--paper));
+  --surface-hover: color-mix(in srgb, var(--forest) 7%, var(--paper-raised));
+}
+.editorial-cover {
+  border-radius: 20px 20px 4px 20px;
+  transition: background-color var(--motion-medium) var(--motion);
+}
+.editorial-cover-art img { animation: illustration-arrive 800ms var(--motion) both; }
+.editorial-cover-copy { animation: copy-arrive 550ms var(--motion) both; }
+.home-index-list { border-top: 0; gap: 1rem 3rem; animation: none; }
+.home-index-list .post-row {
+  padding: 1.8rem 1.4rem;
+  border: 0;
+  border-radius: 12px;
+  background: var(--surface-tint);
+  transition: background-color var(--motion-medium) var(--motion), transform var(--motion-medium) var(--motion);
+}
+.editorial-section-heading { border-bottom: 1px solid var(--rule); margin-bottom: 1.2rem; }
+.post-arrow {
+  border-radius: 50%;
+  background: var(--paper-deep);
+  color: var(--ink-soft);
+  transition: transform var(--motion-medium) var(--motion), background-color var(--motion-medium) var(--motion), color var(--motion-medium) var(--motion);
+}
+.post-row:focus-within .post-arrow { background: var(--forest); color: var(--paper); }
+.header-subscribe { border-radius: 7px; background: var(--ink); border-color: var(--ink); color: var(--paper); }
+.header-subscribe, .filter-button, .newsletter button {
+  transition: background-color var(--motion-medium) var(--motion), color var(--motion-medium) var(--motion), transform var(--motion-fast) var(--motion), border-color var(--motion-medium) var(--motion);
+}
+.header-subscribe:active, .filter-button:active, .newsletter button:active { transform: scale(.97); }
+.site-nav a::after { right: 0; transform: scaleX(0); transform-origin: left; transition: transform var(--motion-medium) var(--motion); }
+.site-nav a:hover::after, .site-nav a[aria-current="page"]::after, .site-nav a:focus-visible::after { transform: scaleX(1); }
+.theme-toggle { position: relative; width: 36px; height: 36px; border-radius: 50%; background: var(--paper-deep); transition: background-color var(--motion-medium) var(--motion), transform 500ms var(--motion); }
+.theme-toggle span { position: absolute; transition: opacity 240ms var(--motion), transform 500ms var(--motion); }
+:root[data-theme="light"] .theme-dark, :root[data-theme="dark"] .theme-light { display: block; opacity: 0; transform: rotate(-90deg) scale(.7); }
+:root[data-theme="light"] .theme-light, :root[data-theme="dark"] .theme-dark { opacity: 1; transform: rotate(0) scale(1); }
+.editorial-about span { display: inline-block; transition: transform var(--motion-medium) var(--motion); }
+.editorial-about:hover span, .editorial-about:focus-visible span { transform: translate(2px, -2px); }
+.journal-topic-links { gap: .7rem; }
+.journal-topic-links a { display: inline-flex; align-items: center; padding: .45rem .9rem; border-radius: 999px; background: var(--paper-deep); transition: background-color var(--motion-medium) var(--motion), color var(--motion-medium) var(--motion); }
+.filter-list { gap: .4rem; }
+.filter-button { border-radius: 999px; }
+.site-footer .newsletter { padding: 2rem; background: var(--surface-tint); border-radius: 16px; transition: background-color var(--motion-medium) var(--motion); }
+.newsletter form { padding: .25rem .35rem .25rem .9rem; border: 1px solid var(--rule); border-radius: 9px; background: var(--paper); transition: border-color var(--motion-medium) var(--motion), background-color var(--motion-medium) var(--motion), box-shadow var(--motion-medium) var(--motion); }
+.newsletter form:focus-within { border-color: var(--forest); box-shadow: 0 0 0 3px color-mix(in srgb, var(--forest) 12%, transparent); }
+.newsletter button { padding: .5rem .9rem; margin-block: .2rem; border-radius: 6px; background: var(--ink); color: var(--paper); }
+.newsletter input { padding-block: .6rem; }
+.desktop-toc a, .mobile-toc a { border-radius: 0 6px 6px 0; transition: background-color var(--motion-medium) var(--motion), color var(--motion-medium) var(--motion), box-shadow var(--motion-medium) var(--motion); }
+.desktop-toc a.is-active { background: color-mix(in srgb, var(--forest) 7%, transparent); }
+.mobile-toc { padding-inline: 1rem; background: var(--surface-tint); border: 0; border-radius: 10px; }
+.article-pagination a { border-radius: 8px; transition: background-color var(--motion-medium) var(--motion); }
+@media (hover: hover) and (pointer: fine) {
+  .home-index-list .post-row:hover { background: var(--surface-hover); transform: translateY(-2px); }
+  .post-row:hover .post-arrow { background: var(--forest); color: var(--paper); transform: translate(2px, -2px); }
+  .theme-toggle:hover { transform: rotate(15deg); background: var(--selection); }
+  .journal-topic-links a:hover { background: var(--selection); color: var(--forest); }
+  .newsletter button:hover { background: var(--forest); }
+  .article-pagination a:hover { background: var(--surface-tint); }
+}
+.home-index-list .post-row:focus-within { background: var(--surface-hover); }
+@keyframes illustration-arrive { from { opacity: .45; transform: scale(1.025); } to { opacity: 1; transform: scale(1); } }
+@keyframes copy-arrive { from { opacity: .5; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@media (max-width: 720px) {
+  .editorial-cover { border-radius: 14px 14px 3px 14px; }
+  .home-index-list { gap: .8rem; }
+  .home-index-list .post-row { padding: 1.4rem 1rem; }
+  .site-footer .newsletter { padding: 1.25rem; }
+  .newsletter button { padding-inline: .7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .home-index-list .post-row:hover, .theme-toggle:hover, .post-arrow:hover { transform: none; }
+}

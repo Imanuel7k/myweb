@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPublishedPosts, taxonomySlug } from "../../lib/posts";
+
+const posts = await getPublishedPosts();
+const tags = [...new Set(posts.flatMap((post) => post.data.tags))].map((name) => ({
+  name,
+  count: posts.filter((post) => post.data.tags.includes(name)).length,
+}));
+---
+
+<BaseLayout title="标签" description="ℵ₁ 的文章标签">
+  <header class="page-heading">
+    <p class="section-label">索引</p>
+    <h1>标签</h1>
+  </header>
+  <div class="topic-links taxonomy-list">
+    {tags.map((tag) => (
+      <a href={`/tags/${taxonomySlug(tag.name)}/`}>
+        <span>{tag.name}</span>
+        <small>{tag.count}</small>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

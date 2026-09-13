@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import editorialBook from "../assets/editorial-abstract.png";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import PostRow from "../components/PostRow.astro";
+import { getPublishedPosts, taxonomySlug } from "../lib/posts";
+
+const posts = await getPublishedPosts();
+const categories = [...new Set(posts.flatMap((post) => post.data.categories))].map((name) => ({
+  name,
+  count: posts.filter((post) => post.data.categories.includes(name)).length,
+}));
+---
+
+<BaseLayout>
+  <section class="home-index" aria-labelledby="recent-heading">
+    <header class="editorial-cover">
+      <div class="editorial-cover-copy">
+        <p class="editorial-author">ALEPH ONE / 井</p>
+        <h1>井的博客</h1>
+        <div class="editorial-subjects">{categories.map((category) => <a href={`/categories/${taxonomySlug(category.name)}/`}>{category.name}</a>)}</div>
+        <a class="editorial-about" href="/about/">关于我 <span aria-hidden="true">↗</span></a>
+      </div>
+      <figure class="editorial-cover-art"><Image src={editorialBook} alt="" width={960} format="webp" quality={85} loading="eager" fetchpriority="high" /></figure>
+    </header>
+    <div class="editorial-section-heading"><h2 id="recent-heading">近作</h2><a class="text-link" href="/posts/">全部文章 <span aria-hidden="true">↗</span></a></div>
+    <div class="home-index-list">
+      {posts.slice(0, 6).map((post) => <PostRow post={post} />)}
+    </div>
+
+  </section>
+  <section class="journal-topics" aria-labelledby="topics-heading">
+    <h2 class="section-label journal-margin" id="topics-heading">分类</h2>
+    <div class="journal-topic-links">{categories.map((category) => <a href={`/categories/${taxonomySlug(category.name)}/`}>{category.name}<small>{category.count}</small></a>)}</div>
+  </section>
+</BaseLayout>

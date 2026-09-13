@@ -1,0 +1,72 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostRow from "../../components/PostRow.astro";
+import { getPublishedPosts } from "../../lib/posts";
+
+const posts = await getPublishedPosts();
+const categories = [...new Set(posts.flatMap((post) => post.data.categories))];
+const years = [...new Set(posts.map((post) => post.data.date.getFullYear()))];
+---
+
+<BaseLayout title="文章" description="ℵ₁ 的全部文章">
+  <header class="page-heading">
+    <p class="section-label">归档</p>
+    <h1>文章</h1>
+    <p>{posts.length} 篇已发布的文章，按时间倒序排列。</p>
+  </header>
+
+  <div class="archive-tools" aria-label="文章筛选">
+    <div class="filter-list" role="group" aria-label="按分类筛选">
+      <button class="filter-button is-active" type="button" data-filter="all">全部</button>
+      {categories.map((category) => (
+        <button class="filter-button" type="button" data-filter={category}>{category}</button>
+      ))}
+    </div>
+  </div>
+
+  <div class="year-groups">
+    {years.map((year) => (
+      <section class="year-group" data-year={year} aria-labelledby={`year-${year}`}>
+        <h2 id={`year-${year}`}>{year}</h2>
+        <div class="post-rows">
+          {posts.filter((post) => post.data.date.getFullYear() === year).map((post) => (
+            <PostRow post={post} />
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+  <p class="filter-empty" hidden>这个分类暂时没有文章。</p>
+</BaseLayout>
+
+<script>
+ document.addEventListener("astro:page-load", () => {
+  const buttons = [...document.querySelectorAll<HTMLButtonElement>(".filter-button")];
+  const rows = [...document.querySelectorAll<HTMLElement>(".post-row")];
+  const groups = [...document.querySelectorAll<HTMLElement>(".year-group")];
+  const empty = document.querySelector<HTMLElement>(".filter-empty");
+
+  function applyFilter(filter: string) {
+    let visible = 0;
+    rows.forEach((row) => {
+      const categories = row.dataset.categories?.split("|") ?? [];
+      const show = filter === "all" || categories.includes(filter);
+      row.hidden = !show;
+      if (show) visible += 1;
+    });
+    groups.forEach((group) => {
+      group.hidden = !group.querySelector(".post-row:not([hidden])");
+    });
+    if (empty) empty.hidden = visible > 0;
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      buttons.forEach((item) => item.classList.remove("is-active"));
+      button.classList.add("is-active");
+      applyFilter(button.dataset.filter ?? "all");
+    });
+  });
+
+ });
+</script>

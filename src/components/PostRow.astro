@@ -1,0 +1,25 @@
+---
+import type { Post } from "../lib/posts";
+import { formatDate, postUrl } from "../lib/posts";
+
+interface Props {
+  post: Post;
+  index?: number;
+  showDescription?: boolean;
+}
+
+const { post, index, showDescription = true } = Astro.props;
+---
+
+<article class="post-row" data-categories={post.data.categories.join("|")}>
+  {typeof index === "number" && <span class="post-index" aria-hidden="true">{String(index).padStart(2, "0")}</span>}
+  <div class="post-row-main">
+    <div class="post-row-meta">
+      <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+      {post.data.categories[0] && <span>{post.data.categories[0]}</span>}
+    </div>
+    <h2><a href={postUrl(post)}>{post.data.title}</a></h2>
+    {showDescription && <p>{post.data.description}</p>}
+  </div>
+  <a class="post-arrow" href={postUrl(post)} aria-label={`阅读《${post.data.title}》`}>↗</a>
+</article>

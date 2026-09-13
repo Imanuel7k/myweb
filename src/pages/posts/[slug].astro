@@ -1,0 +1,131 @@
+---
+import { render } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { formatDate, getPublishedPosts, postSlug, postUrl, readingMinutes, taxonomySlug, type Post } from "../../lib/posts";
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts();
+  return posts.map((post) => ({
+    params: { slug: postSlug(post) },
+    props: { post, posts },
+  }));
+}
+
+interface Props {
+  post: Post;
+  posts: Post[];
+}
+
+const { post, posts } = Astro.props;
+const { Content, headings } = await render(post);
+const minutes = readingMinutes(post.body);
+const index = posts.findIndex((item) => item.id === post.id);
+const newer = index > 0 ? posts[index - 1] : undefined;
+const older = index < posts.length - 1 ? posts[index + 1] : undefined;
+const canonical = new URL(postUrl(post), Astro.site).toString();
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.date.toISOString(),
+  author: { "@type": "Person", name: "井" },
+  mainEntityOfPage: canonical,
+};
+const toc = headings.filter((heading) => heading.depth === 2 || heading.depth === 3);
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  article
+  publishedTime={post.data.date}
+  jsonLd={jsonLd}
+>
+  <div class="reading-progress" aria-hidden="true"><span></span></div>
+  <article class="article">
+    <header class="article-header">
+      <div class="article-meta">
+        <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+        {post.data.categories.map((category) => (
+          <a href={`/categories/${taxonomySlug(category)}/`}>{category}</a>
+        ))}
+        <span>{minutes} 分钟阅读</span>
+      </div>
+      <h1>{post.data.title}</h1>
+      <p class="article-description">{post.data.description}</p>
+    </header>
+
+    {toc.length > 0 && (
+      <details class="mobile-toc">
+        <summary>文章目录</summary>
+        <nav aria-label="文章目录">
+          {toc.map((heading) => <a class:list={[{ nested: heading.depth === 3 }]} href={`#${heading.slug}`}>{heading.text}</a>)}
+        </nav>
+      </details>
+    )}
+
+    <div class="article-grid">
+      <div class="article-content">
+        <Content />
+      </div>
+      {toc.length > 0 && (
+        <aside class="desktop-toc">
+          <p>目录</p>
+          <nav aria-label="文章目录">
+            {toc.map((heading) => <a class:list={[{ nested: heading.depth === 3 }]} href={`#${heading.slug}`}>{heading.text}</a>)}
+          </nav>
+        </aside>
+      )}
+    </div>
+
+    <nav class="article-pagination" aria-label="相邻文章">
+      {newer ? <a href={postUrl(newer)}><small>较新一篇</small><span>{newer.data.title}</span></a> : <span />}
+      {older ? <a class="next" href={postUrl(older)}><small>较早一篇</small><span>{older.data.title}</span></a> : <span />}
+    </nav>
+  </article>
+</BaseLayout>
+
+<script>
+ document.addEventListener("astro:page-load", () => {
+  if (!document.querySelector(".article")) return;
+  const progress = document.querySelector<HTMLElement>(".reading-progress span");
+  const article = document.querySelector<HTMLElement>(".article-content");
+  const tocLinks = [...document.querySelectorAll<HTMLAnchorElement>(".desktop-toc a")];
+  const headings = tocLinks
+    .map((link) => document.getElementById(decodeURIComponent(link.hash.slice(1))))
+    .filter((heading): heading is HTMLElement => Boolean(heading));
+
+  let frame = 0;
+  function updateProgress() {
+    frame = 0;
+    if (!progress || !article) return;
+    const start = article.getBoundingClientRect().top + window.scrollY;
+    const distance = Math.max(1, article.offsetHeight - window.innerHeight);
+    const value = Math.min(1, Math.max(0, (window.scrollY - start) / distance));
+    progress.style.transform = `scaleX(${value})`;
+    let current = headings[0];
+    for (const heading of headings) {
+      if (heading.getBoundingClientRect().top > window.innerHeight * .25) break;
+      current = heading;
+    }
+    tocLinks.forEach((link) => {
+      const active = decodeURIComponent(link.hash.slice(1)) === current?.id;
+      link.classList.toggle("is-active", active);
+      if (active) link.setAttribute("aria-current", "location");
+      else link.removeAttribute("aria-current");
+    });
+  }
+  function scheduleUpdate() {
+    if (!frame) frame = requestAnimationFrame(updateProgress);
+  }
+  updateProgress();
+  addEventListener("scroll", scheduleUpdate, { passive: true });
+  addEventListener("resize", scheduleUpdate);
+  document.addEventListener("astro:before-swap", () => {
+    cancelAnimationFrame(frame);
+    removeEventListener("scroll", scheduleUpdate);
+    removeEventListener("resize", scheduleUpdate);
+  }, { once: true });
+ });
+</script>

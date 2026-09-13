@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getPublishedPosts, taxonomySlug } from "../../lib/posts";
+
+const posts = await getPublishedPosts();
+const categories = [...new Set(posts.flatMap((post) => post.data.categories))].map((name) => ({
+  name,
+  count: posts.filter((post) => post.data.categories.includes(name)).length,
+}));
+---
+
+<BaseLayout title="分类" description="按分类浏览 ℵ₁">
+  <header class="page-heading">
+    <p class="section-label">索引</p>
+    <h1>分类</h1>
+  </header>
+  <div class="topic-links taxonomy-list">
+    {categories.map((category) => (
+      <a href={`/categories/${taxonomySlug(category.name)}/`}>
+        <span>{category.name}</span>
+        <small>{category.count}</small>
+      </a>
+    ))}
+  </div>
+</BaseLayout>

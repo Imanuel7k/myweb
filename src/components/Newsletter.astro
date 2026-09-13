@@ -1,0 +1,23 @@
+---
+interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
+---
+
+<section class:list={["newsletter", { compact }]} aria-labelledby={compact ? "footer-subscribe" : "subscribe-heading"}>
+  <div>
+    <p class="section-label">邮件订阅</p>
+    <h2 id={compact ? "footer-subscribe" : "subscribe-heading"}>新文章发布时，收到一封邮件。</h2>
+  </div>
+  <form
+    action="https://buttondown.email/api/emails/embed-subscribe/jingsa704"
+    method="post"
+    target="_blank"
+  >
+    <label class="sr-only" for={compact ? "footer-email" : "subscribe-email"}>邮箱地址</label>
+    <input id={compact ? "footer-email" : "subscribe-email"} type="email" name="email" autocomplete="email" placeholder="name@example.com" required />
+    <button type="submit">订阅</button>
+  </form>
+</section>

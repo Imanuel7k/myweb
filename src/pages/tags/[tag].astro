@@ -1,0 +1,33 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PostRow from "../../components/PostRow.astro";
+import { getPublishedPosts, taxonomySlug, type Post } from "../../lib/posts";
+
+export async function getStaticPaths() {
+  const posts = await getPublishedPosts();
+  const tags = [...new Set(posts.flatMap((post) => post.data.tags))];
+  return tags.map((tag) => ({
+    params: { tag: taxonomySlug(tag) },
+    props: { tag, posts: posts.filter((post) => post.data.tags.includes(tag)) },
+  }));
+}
+
+interface Props {
+  tag: string;
+  posts: Post[];
+}
+
+const { tag, posts } = Astro.props;
+---
+
+<BaseLayout title={tag} description={`ℵ₁ 中标记为${tag}的文章`}>
+  <header class="page-heading taxonomy-heading">
+    <p class="section-label">标签</p>
+    <h1>{tag}</h1>
+    <p>{posts.length} 篇文章</p>
+  </header>
+  <div class="post-rows">
+    {posts.map((post) => <PostRow post={post} />)}
+  </div>
+  <p class="back-link"><a href="/posts/">← 返回全部文章</a></p>
+</BaseLayout>

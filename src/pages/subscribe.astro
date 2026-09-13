@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Newsletter from "../components/Newsletter.astro";
+---
+
+<BaseLayout title="订阅" description="通过邮件订阅 ℵ₁">
+  <div class="subscribe-page">
+    <Newsletter />
+    <p>邮件由 Buttondown 发送，可以随时退订。也可以使用 <a href="/index.xml">RSS</a> 订阅。</p>
+  </div>
+</BaseLayout>
